@@ -71,7 +71,7 @@ app.post('/psytrance',
         const psytrances = req.body.psytrances;
         psytrance.push(psytrances); // vai colocar a nova mensgem no banco de dados, quando atualizar o localhost vai aparecer
                                  // a mensagem adicionada ao banco de dados, no caso um array
-        res.send("DJ/Produtor adicionado");
+        res.send("DJ/Produtor adicionado")
     }
 );
 // trocar algo antigo por algo novo
@@ -80,9 +80,9 @@ app.put('/psytrance/:id',
         const id = req.params.id - 1;
         const psytrances = req.body.psytrances;
         psytrance[id] = psytrances;        
-        res.send("DJ/Produtor atualizado com sucesso.");
+        res.send("DJ/Produtor atualizado com sucesso.")
     }
-);
+)
 
 app.delete('/psytrance/:id', 
     (req, res) => {

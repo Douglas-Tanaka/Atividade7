@@ -13,7 +13,7 @@ app.listen(process.env.PORT || 3000);
 
 const Arjuna = '{ "name":"Arjuna", "type":"Forest", "about":"Arjuna was born in the Himalayas in India in 1982 Ever since, he has had a unique and interesting journey through life. He grew up in Goa, the mecca of psy trance, where he saw the birth and evolution of this mystical genre." }';
 const Maramba = '{ "name":"Maramba", "type":"Darkpsy/Hitech/ChillOut", "about":"Marambá is the psychedelic trance project of João Alexandre, a brazilian musician also responsible for the projects Shaumbra (with Tyamat), Woruban (with Necropsycho), Atmos Moon (Ambient with Necropsycho) and Namu (solo Psychill/Ambient project)." }';
-const Venusaur = '{ "name":"Venusaur", "type":"Grass/Poison", "about":"Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight." }';
+const DarkWhisper = '{ "name":"DarkWhisper", "type":"Darkpsy", "about":"As to describe the Dark Whisper s soundscape, the use of both analogue and digital instruments are used with a psychedelic influence fusing with ethnic cultures and frequencies to activate inner states of memory consciousness allowing the listener to explore the cymatic body, mind and spirit tuning, while conveying a message to the humanity on the whole." }';
 const Charmander = '{ "name":"Charmander", "type":"Fire", "about":"It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail." }';
 const Charmeleon = '{ "name":"Charmeleon", "type":"Fire", "about":"It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws." }';
 const Charizard  = '{ "name":"Charizard ", "type":"Fire/Flying", "about":"It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames." }';
@@ -25,7 +25,7 @@ const Blastoise  = '{ "name":"Blastoise ", "type":"Water", "about":"It crushes i
 // array simulando um banco de dados, com os objeto Json
 const pokedex = [ JSON.parse(Arjuna), 
                   JSON.parse(Maramba),
-                  JSON.parse(Venusaur),
+                  JSON.parse(DarkWhisper),
                   JSON.parse(Charmander),
                   JSON.parse(Charmeleon),
                   JSON.parse(Charizard),

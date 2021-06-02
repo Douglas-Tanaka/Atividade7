@@ -18,9 +18,8 @@ const Lulio = '{ "name":"Lulio", "type":"Forest/Darkpsy", "about":"From the coun
 const Tyndra = '{ "name":"Tyndra", "type":"Hitech", "about":" born in Barcelona in 1987, had her first connection with music through the violin when she was 10 years old, later on at the age of 12 she started listening to electronic music and after a few years she came across Psychedelic Trance music and straight away loved the sound of it. In 2005 she started djing Psytrance and then she moved to the United Kingdom (London) and started to play in the London Psytrance scene.In 2008 she decided to go deeper and started to study Music production at the London School of Sound and a Music Technology Specialist BA (Hons) in the University of West London.)" }';
 const OnkelDunkel  = '{ "name":"OnkelDunkel", "type":"Forest", "about":"Onkel Dunkel is the musical alter ego of Monno, producer, mastering engineer, synth lover and sound designer.Born and raised in Denmark, he has been involved with music one way or another since his late teens. First as a bass player at the age of 17, but the introduction to Psychedelic Trance lead to him ditching his bass and getting into computers and synthesizers."}';
 const Mubali = '{"name" : "Mubali", "type":"Forest/Westpsy/Darkpsy", "about":"Mubali is the psychedelic trance moniker for Greg Farley. Established in 2003, his journey in musical development allowed him to become involved in the Psychedelic Trance music scene. His career spans nearly two decades with several album releases and many releases on established labels throughout the years. "}';
-const Wartortle = '{ "name":"Wartortle", "type":"Water", "about":"It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old." }';
-const Blastoise  = '{ "name":"Blastoise ", "type":"Water", "about":"It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell." }';
-
+const Organoise = '{ "name":"Organoise", "type":"Hitech", "about":" ATIM AND DUGGAH TEAMED UP TO REBIRTH THE PROJECT. THEY’VE BEEN ROCKING FOR A DECADE NOW HAVING BEEN AT IT SINCE 2007. WE’RE PROUD TO ANNOUNCE THAT AFTER MANY V.A RELEASES THEY HAVE FINALLY RELEASED THEIR DEBUT FULL LENGTH ALBUM… AND IT’S EVERYTHING WE HAD HOPED IT WOULD BE.South African Hi-tech Psy act, One half of the Organoise Duo. Representing ZuluTunes & Damaru Records." }';
+const PeakPilots = '{ "name":"PeakPilots", "type":"Hitech", "about":"PEAK PILOTS IS A COLLABORATION PROJECT BETWEEN ORGANOISE (ATIM & DUGGUH) AND NATURAL DISASTER. FILLING A MUCH NEEDED GAP IN THE 150S TO 160S BPM RANGES THE ACT WAS DESIGNED AS BRIDGE BETWEEN TRADITIONAL DARK PSY AND HI-TECH. IT’S SUPER GROOVY, ULTRA TEXTUREY AND LOADS OF FUN. EXPECT WARM ROLLING BASELINES AND LOTS OF TECHNICAL GLITCHY DETAILS ROUNDED OFF WITH DEEP ATMOSPHERICS." }';
 
 // array simulando um banco de dados, com os objeto Json
 const pokedex = [ JSON.parse(Arjuna), 
@@ -30,8 +29,8 @@ const pokedex = [ JSON.parse(Arjuna),
                   JSON.parse(Tyndra),
                   JSON.parse(OnkelDunkel),
                   JSON.parse(Mubali),
-                  JSON.parse(Wartortle),
-                  JSON.parse(Blastoise)
+                  JSON.parse(Organoise),
+                  JSON.parse(PeakPilots)
 ];
 // novo endpoint com uma explicação inicial
 app.get('/',

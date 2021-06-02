@@ -24,7 +24,7 @@ const Blastoise  = '{ "name":"Blastoise ", "type":"Water", "about":"It crushes i
 
 // array simulando um banco de dados, com os objeto Json
 const pokedex = [ JSON.parse(Arjuna), 
-                  JSON.parse(Ivysaur),
+                  JSON.parse(Maramba),
                   JSON.parse(Venusaur),
                   JSON.parse(Charmander),
                   JSON.parse(Charmeleon),

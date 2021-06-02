@@ -24,7 +24,7 @@ const PeakPilots = '{ "name":"PeakPilots", "type":"Hitech", "about":"PEAK PILOTS
 
 
 // array simulando um banco de dados, com os objetos Json
-const psytrance= [ JSON.parse(Arjuna), 
+const pokedex= [ JSON.parse(Arjuna), 
                   JSON.parse(Maramba),
                   JSON.parse(DarkWhisper),
                   JSON.parse(Lulio),

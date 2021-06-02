@@ -35,56 +35,56 @@ const pokedex = [ JSON.parse(Arjuna),
 // novo endpoint com uma explicação inicial
 app.get('/',
     function(req, res){
-        res.send("Olá esse é o Backend do Bruno Miguel e da Maria Eduarda, fizemos um banco de dados baseado em Pokemon. Nosso banco de dados é um Pokedex com os nove primeiros Pokemons da Região de Kanto."); 
+        res.send("Olá esse é o Backend do Douglas Tanaka e da Matheus Scorssatto, fizemos um banco de dados baseado em PsyTrance, voltado para sonoridades noturnas. Nosso banco de dados é com base nas vertentes e DJ/Produtores."); 
     }
 );
 
 // novo endpoint com o banco de dados
-app.get('/pokedex',
+app.get('/psytrance',
     function(req, res){
-        res.send(pokedex.filter(Boolean)); //isso é pra tratar os valores q aparecem como
+        res.send(psytrance.filter(Boolean)); //isso é pra tratar os valores q aparecem como
                                              //null, que são lidos como boleano
     }
 );
 
 // arrumando os indeces do arry para facilitar interface para o usuario
-app.get('/pokedex/:id',
+app.get('/psytrance/:id',
     function(req, res){
         const id = req.params.id - 1;
-        const pokedexs = pokedex[id];
+        const psytrances = psytrance[id];
 
-        if (!pokedexs){
-            res.send("Pokemon não encontrado");
+        if (!psytrances){
+            res.send("DJ/Produtor não encontrado");
         } else {
-            res.send(pokedexs);
+            res.send(psytrances);
         }
     }
 )
 // usando o verbo post
-app.post('/pokedex', 
+app.post('/psytrance', 
     (req, res) => {
-        console.log(req.body.pokedexs); // codigo para receber a mensagem 
-        const pokedexs = req.body.pokedexs;
-        pokedex.push(pokedexs); // vai colocar a nova mensgem no banco de dados, quando atualizar o localhost vai aparecer
+        console.log(req.body.psytrances); // codigo para receber a mensagem 
+        const psytrances = req.body.psytrances;
+        psytrance.push(psytrances); // vai colocar a nova mensgem no banco de dados, quando atualizar o localhost vai aparecer
                                  // a mensagem adicionada ao banco de dados, no caso um array
-        res.send("Pokemon adicionado")
+        res.send("DJ/Produtor adicionado")
     }
 );
 // trocar algo antigo por algo novo
-app.put('/pokedex/:id',
+app.put('/psytrance/:id',
     (req, res) => {
         const id = req.params.id - 1;
-        const pokedexs = req.body.pokedexs;
-        pokedex[id] = pokedexs;        
-        res.send("Pokemon atualizado com sucesso.")
+        const psytrances = req.body.psytrances;
+        psytrance[id] = psytrances;        
+        res.send("DJ/Produtor atualizado com sucesso.")
     }
 )
 
-app.delete('/pokedex/:id', 
+app.delete('/psytrance/:id', 
     (req, res) => {
         const id = req.params.id - 1;
-        delete pokedex[id];
+        delete psytrance[id];
 
-        res.send("Pokemon removido com sucesso");
+        res.send("DJ/Produtor removido com sucesso");
     }
 );

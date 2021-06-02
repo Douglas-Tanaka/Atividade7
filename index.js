@@ -22,7 +22,7 @@ const Organoise = '{ "name":"Organoise", "type":"Hitech", "about":" ATIM AND DUG
 const PeakPilots = '{ "name":"PeakPilots", "type":"Hitech", "about":"PEAK PILOTS IS A COLLABORATION PROJECT BETWEEN ORGANOISE (ATIM & DUGGUH) AND NATURAL DISASTER. FILLING A MUCH NEEDED GAP IN THE 150S TO 160S BPM RANGES THE ACT WAS DESIGNED AS BRIDGE BETWEEN TRADITIONAL DARK PSY AND HI-TECH. IT’S SUPER GROOVY, ULTRA TEXTUREY AND LOADS OF FUN. EXPECT WARM ROLLING BASELINES AND LOTS OF TECHNICAL GLITCHY DETAILS ROUNDED OFF WITH DEEP ATMOSPHERICS." }';
 
 // array simulando um banco de dados, com os objeto Json
-const pokedex = [ JSON.parse(Arjuna), 
+const psytrance = [ JSON.parse(Arjuna), 
                   JSON.parse(Maramba),
                   JSON.parse(DarkWhisper),
                   JSON.parse(Lulio),

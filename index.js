@@ -1,7 +1,6 @@
-
 const express = require("express");
 const app = express();
-app.use(json()); //isso para garantir o tratamento do json
+app.use(express.json()); //isso para garantir o tratamento do json
 
 // Permissões, senão colocar pode ser que não 
 // funcione com o cliente
@@ -13,82 +12,82 @@ app.listen(process.env.PORT || 3000);
 
 
 // strings para o banco de dados
-const Arjuna = '{ "name":"Arjuna", "type":"Forest", "about":"Arjuna was born in the Himalayas in India in 1982 Ever since, he has had a unique and interesting journey through life. He grew up in Goa, the mecca of psy trance, where he saw the birth and evolution of this mystical genre." }';
-const Maramba = '{ "name":"Maramba", "type":"Darkpsy/Hitech/ChillOut", "about":"Marambá is the psychedelic trance project of João Alexandre, a brazilian musician also responsible for the projects Shaumbra (with Tyamat), Woruban (with Necropsycho), Atmos Moon (Ambient with Necropsycho) and Namu (solo Psychill/Ambient project)." }';
-const DarkWhisper = '{ "name":"DarkWhisper", "type":"Darkpsy", "about":"As to describe the Dark Whisper s soundscape, the use of both analogue and digital instruments are used with a psychedelic influence fusing with ethnic cultures and frequencies to activate inner states of memory consciousness allowing the listener to explore the cymatic body, mind and spirit tuning, while conveying a message to the humanity on the whole." }';
-const Lulio = '{ "name":"Lulio", "type":"Forest/Darkpsy", "about":"From the countryside of Brazil emerges LULiO , a project formed by brothers Luciano and Julio. LULiO is based on a multidimensional quantic equational madness." }';
-const Tyndra = '{ "name":"Tyndra", "type":"Hitech", "about":" born in Barcelona in 1987, had her first connection with music through the violin when she was 10 years old, later on at the age of 12 she started listening to electronic music and after a few years she came across Psychedelic Trance music and straight away loved the sound of it. In 2005 she started djing Psytrance and then she moved to the United Kingdom (London) and started to play in the London Psytrance scene.In 2008 she decided to go deeper and started to study Music production at the London School of Sound and a Music Technology Specialist BA (Hons) in the University of West London.)" }';
-const OnkelDunkel  = '{ "name":"OnkelDunkel ", "type":"Forest", "about":"Onkel Dunkel is the musical alter ego of Monno, producer, mastering engineer, synth lover and sound designer.Born and raised in Denmark, he has been involved with music one way or another since his late teens. First as a bass player at the age of 17, but the introduction to Psychedelic Trance lead to him ditching his bass and getting into computers and synthesizers."}';
-const Mubali = '{"name" : "Mubali", "type":"Forest/Westpsy/Darkpsy", "about":""}';
-const Organoise = '{ "name":"Organoise", "type":"Hitech", "about":" ATIM AND DUGGAH TEAMED UP TO REBIRTH THE PROJECT. THEY’VE BEEN ROCKING FOR A DECADE NOW HAVING BEEN AT IT SINCE 2007. WE’RE PROUD TO ANNOUNCE THAT AFTER MANY V.A RELEASES THEY HAVE FINALLY RELEASED THEIR DEBUT FULL LENGTH ALBUM… AND IT’S EVERYTHING WE HAD HOPED IT WOULD BE.South African Hi-tech Psy act, One half of the "Organoise" Duo. Representing ZuluTunes & Damaru Records." }';
-const PeakPilots = '{ "name":"PeakPilots", "type":"Hitech", "about":"PEAK PILOTS IS A COLLABORATION PROJECT BETWEEN ORGANOISE (ATIM & DUGGUH) AND NATURAL DISASTER. FILLING A MUCH NEEDED GAP IN THE 150S TO 160S BPM RANGES THE ACT WAS DESIGNED AS BRIDGE BETWEEN TRADITIONAL DARK PSY AND HI-TECH. IT’S SUPER GROOVY, ULTRA TEXTUREY AND LOADS OF FUN. EXPECT WARM ROLLING BASELINES AND LOTS OF TECHNICAL GLITCHY DETAILS ROUNDED OFF WITH DEEP ATMOSPHERICS." }';
+const Bulbasaur = '{ "name":"Bulbasaur", "type":"Grass/Poison", "about":"There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger." }';
+const Ivysaur = '{ "name":"Ivysaur", "type":"Grass/Poison", "about":"When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs." }';
+const Venusaur = '{ "name":"Venusaur", "type":"Grass/Poison", "about":"Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight." }';
+const Charmander = '{ "name":"Charmander", "type":"Fire", "about":"It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail." }';
+const Charmeleon = '{ "name":"Charmeleon", "type":"Fire", "about":"It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws." }';
+const Charizard  = '{ "name":"Charizard ", "type":"Fire/Flying", "about":"It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames." }';
+const Squirtle = '{ "name":"Squirtle", "type":"Water", "about":"When it retracts its long neck into its shell, it squirts out water with vigorous force." }';
+const Wartortle = '{ "name":"Wartortle", "type":"Water", "about":"It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old." }';
+const Blastoise  = '{ "name":"Blastoise ", "type":"Water", "about":"It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell." }';
 
 
 // array simulando um banco de dados, com os objetos Json
-const psytrance= [ JSON.parse(Arjuna), 
-                  JSON.parse(Maramba),
-                  JSON.parse(DarkWhisper),
-                  JSON.parse(Lulio),
-                  JSON.parse(Tyndra),
-                  JSON.parse(OnkelDunkel),
-                  JSON.parse(Mubali),
-                  JSON.parse(Organoise),
-                  JSON.parse(PeakPilots)
+const pokedex = [ JSON.parse(Bulbasaur), 
+                  JSON.parse(Ivysaur),
+                  JSON.parse(Venusaur),
+                  JSON.parse(Charmander),
+                  JSON.parse(Charmeleon),
+                  JSON.parse(Charizard),
+                  JSON.parse(Squirtle),
+                  JSON.parse(Wartortle),
+                  JSON.parse(Blastoise)
 ];
 
 // novo endpoint com uma explicação inicial
 app.get('/',
     function(req, res){
-        res.send("Olá esse é o Backend do Douglas Tanaka e da Matheus Scorssatto, fizemos um banco de dados baseado em PsyTrance, voltado para sonoridades noturnas. Nosso banco de dados é com base nas vertentes e DJ/Produtores."); 
+        res.send("Olá esse é o Backend do Bruno Miguel e da Maria Eduarda, fizemos um banco de dados baseado em Pokemon. Nosso banco de dados é um Pokedex com os nove primeiros Pokemons da Região de Kanto."); 
     }
 );
 
 // novo endpoint com o banco de dados
-app.get('/psytrance',
+app.get('/pokedex',
     function(req, res){
-        res.send(psytrance.filter(Boolean)); //isso é pra tratar os valores q aparecem como
+        res.send(pokedex.filter(Boolean)); //isso é pra tratar os valores q aparecem como
                                              //null, que são lidos como boleano
     }
 );
 
 // arrumando os indeces do arry para facilitar interface para o usuario
-app.get('/psytrance/:id',
+app.get('/pokedex/:id',
     function(req, res){
         const id = req.params.id - 1;
-        const psytrances = psytrance[id];
+        const pokedexs = pokedex[id];
 
-        if (!psytrances){
-            res.send("DJ/Produtor não encontrado");
+        if (!pokedexs){
+            res.send("Pokemon não encontrado");
         } else {
-            res.send(psytrances);
+            res.send(pokedexs);
         }
     }
 )
 // usando o verbo post
-app.post('/psytrance', 
+app.post('/pokedex', 
     (req, res) => {
-        console.log(req.body.psytrances); // codigo para receber a mensagem 
-        const psytrances = req.body.psytrances;
-        psytrance.push(psytrances); // vai colocar a nova mensgem no banco de dados, quando atualizar o localhost vai aparecer
+        console.log(req.body.pokedexs); // codigo para receber a mensagem 
+        const pokedexs = req.body.pokedexs;
+        pokedex.push(pokedexs); // vai colocar a nova mensgem no banco de dados, quando atualizar o localhost vai aparecer
                                  // a mensagem adicionada ao banco de dados, no caso um array
-        res.send("DJ/Produtor adicionado")
+        res.send("Pokemon adicionado")
     }
 );
 // trocar algo antigo por algo novo
-app.put('/psytrance/:id',
+app.put('/pokedex/:id',
     (req, res) => {
         const id = req.params.id - 1;
-        const psytrances = req.body.psytrances;
-        psytrance[id] = psytrances;        
-        res.send("DJ/Produtor atualizado com sucesso.")
+        const pokedexs = req.body.pokedexs;
+        pokedex[id] = pokedexs;        
+        res.send("Pokemon atualizado com sucesso.")
     }
 )
 
-app.delete('/psytrance/:id', 
+app.delete('/pokedex/:id', 
     (req, res) => {
         const id = req.params.id - 1;
-        delete psytrance[id];
+        delete pokedex[id];
 
-        res.send("DJ/Produtor removido com sucesso");
+        res.send("Pokemon removido com sucesso");
     }
 );

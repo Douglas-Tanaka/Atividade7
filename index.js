@@ -14,8 +14,8 @@ app.listen(process.env.PORT || 3000);
 const Arjuna = '{ "name":"Arjuna", "type":"Forest", "about":"Arjuna was born in the Himalayas in India in 1982 Ever since, he has had a unique and interesting journey through life. He grew up in Goa, the mecca of psy trance, where he saw the birth and evolution of this mystical genre." }';
 const Maramba = '{ "name":"Maramba", "type":"Darkpsy/Hitech/ChillOut", "about":"Marambá is the psychedelic trance project of João Alexandre, a brazilian musician also responsible for the projects Shaumbra (with Tyamat), Woruban (with Necropsycho), Atmos Moon (Ambient with Necropsycho) and Namu (solo Psychill/Ambient project)." }';
 const DarkWhisper = '{ "name":"DarkWhisper", "type":"Darkpsy", "about":"As to describe the Dark Whisper s soundscape, the use of both analogue and digital instruments are used with a psychedelic influence fusing with ethnic cultures and frequencies to activate inner states of memory consciousness allowing the listener to explore the cymatic body, mind and spirit tuning, while conveying a message to the humanity on the whole." }';
-const Charmander = '{ "name":"Charmander", "type":"Fire", "about":"It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail." }';
-const Charmeleon = '{ "name":"Charmeleon", "type":"Fire", "about":"It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws." }';
+const Lulio = '{ "name":"Lulio", "type":"Forest/Darkpsy", "about":"From the countryside of Brazil emerges LULiO , a project formed by brothers Luciano and Julio. LULiO is based on a multidimensional quantic equational madness." }';
+const Tyndra = '{ "name":"Tyndra", "type":"Hitech", "about":" born in Barcelona in 1987, had her first connection with music through the violin when she was 10 years old, later on at the age of 12 she started listening to electronic music and after a few years she came across Psychedelic Trance music and straight away loved the sound of it. In 2005 she started djing Psytrance and then she moved to the United Kingdom (London) and started to play in the London Psytrance scene.In 2008 she decided to go deeper and started to study Music production at the London School of Sound and a Music Technology Specialist BA (Hons) in the University of West London.)" }';
 const Charizard  = '{ "name":"Charizard ", "type":"Fire/Flying", "about":"It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames." }';
 const Squirtle = '{ "name":"Squirtle", "type":"Water", "about":"When it retracts its long neck into its shell, it squirts out water with vigorous force." }';
 const Wartortle = '{ "name":"Wartortle", "type":"Water", "about":"It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old." }';
@@ -26,8 +26,8 @@ const Blastoise  = '{ "name":"Blastoise ", "type":"Water", "about":"It crushes i
 const pokedex = [ JSON.parse(Arjuna), 
                   JSON.parse(Maramba),
                   JSON.parse(DarkWhisper),
-                  JSON.parse(Charmander),
-                  JSON.parse(Charmeleon),
+                  JSON.parse(Lulio),
+                  JSON.parse(Tyndra),
                   JSON.parse(Charizard),
                   JSON.parse(Squirtle),
                   JSON.parse(Wartortle),

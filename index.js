@@ -16,8 +16,8 @@ const Maramba = '{ "name":"Maramba", "type":"Darkpsy/Hitech/ChillOut", "about":"
 const DarkWhisper = '{ "name":"DarkWhisper", "type":"Darkpsy", "about":"As to describe the Dark Whisper s soundscape, the use of both analogue and digital instruments are used with a psychedelic influence fusing with ethnic cultures and frequencies to activate inner states of memory consciousness allowing the listener to explore the cymatic body, mind and spirit tuning, while conveying a message to the humanity on the whole." }';
 const Lulio = '{ "name":"Lulio", "type":"Forest/Darkpsy", "about":"From the countryside of Brazil emerges LULiO , a project formed by brothers Luciano and Julio. LULiO is based on a multidimensional quantic equational madness." }';
 const Tyndra = '{ "name":"Tyndra", "type":"Hitech", "about":" born in Barcelona in 1987, had her first connection with music through the violin when she was 10 years old, later on at the age of 12 she started listening to electronic music and after a few years she came across Psychedelic Trance music and straight away loved the sound of it. In 2005 she started djing Psytrance and then she moved to the United Kingdom (London) and started to play in the London Psytrance scene.In 2008 she decided to go deeper and started to study Music production at the London School of Sound and a Music Technology Specialist BA (Hons) in the University of West London.)" }';
-const Charizard  = '{ "name":"Charizard ", "type":"Fire/Flying", "about":"It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames." }';
-const Squirtle = '{ "name":"Squirtle", "type":"Water", "about":"When it retracts its long neck into its shell, it squirts out water with vigorous force." }';
+const OnkelDunkel  = '{ "name":"OnkelDunkel", "type":"Forest", "about":"Onkel Dunkel is the musical alter ego of Monno, producer, mastering engineer, synth lover and sound designer.Born and raised in Denmark, he has been involved with music one way or another since his late teens. First as a bass player at the age of 17, but the introduction to Psychedelic Trance lead to him ditching his bass and getting into computers and synthesizers."}';
+const Mubali = '{"name" : "Mubali", "type":"Forest/Westpsy/Darkpsy", "about":"Mubali is the psychedelic trance moniker for Greg Farley. Established in 2003, his journey in musical development allowed him to become involved in the Psychedelic Trance music scene. His career spans nearly two decades with several album releases and many releases on established labels throughout the years. "}';
 const Wartortle = '{ "name":"Wartortle", "type":"Water", "about":"It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old." }';
 const Blastoise  = '{ "name":"Blastoise ", "type":"Water", "about":"It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell." }';
 
@@ -28,8 +28,8 @@ const pokedex = [ JSON.parse(Arjuna),
                   JSON.parse(DarkWhisper),
                   JSON.parse(Lulio),
                   JSON.parse(Tyndra),
-                  JSON.parse(Charizard),
-                  JSON.parse(Squirtle),
+                  JSON.parse(OnkelDunkel),
+                  JSON.parse(Mubali),
                   JSON.parse(Wartortle),
                   JSON.parse(Blastoise)
 ];

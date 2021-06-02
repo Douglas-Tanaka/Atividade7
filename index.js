@@ -33,7 +33,7 @@ const pokedex= [ JSON.parse(Arjuna),
                   JSON.parse(Mubali),
                   JSON.parse(Organoise),
                   JSON.parse(PeakPilots)
-
+]
 // novo endpoint com uma explicação inicial
 app.get('/',
     function(req, res){

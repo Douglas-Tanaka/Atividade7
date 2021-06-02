@@ -11,7 +11,7 @@ app.use(cors());
 app.listen(process.env.PORT || 3000);
 
 
-const Bulbasaur = '{ "name":"Bulbasaur", "type":"Grass/Poison", "about":"There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger." }';
+const Arjuna = '{ "name":"Arjuna", "type":"Forest", "about":"Arjuna was born in the Himalayas in India in 1982 Ever since, he has had a unique and interesting journey through life. He grew up in Goa, the mecca of psy trance, where he saw the birth and evolution of this mystical genre." }';
 const Ivysaur = '{ "name":"Ivysaur", "type":"Grass/Poison", "about":"When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs." }';
 const Venusaur = '{ "name":"Venusaur", "type":"Grass/Poison", "about":"Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight." }';
 const Charmander = '{ "name":"Charmander", "type":"Fire", "about":"It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail." }';
@@ -23,7 +23,7 @@ const Blastoise  = '{ "name":"Blastoise ", "type":"Water", "about":"It crushes i
 
 
 // array simulando um banco de dados, com os objeto Json
-const pokedex = [ JSON.parse(Bulbasaur), 
+const pokedex = [ JSON.parse(Arjuna), 
                   JSON.parse(Ivysaur),
                   JSON.parse(Venusaur),
                   JSON.parse(Charmander),

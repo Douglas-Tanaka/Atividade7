@@ -33,7 +33,7 @@ const psytrance= [ JSON.parse(Arjuna),
                   JSON.parse(OnkelDunkel),
                   JSON.parse(Mubali),
                   JSON.parse(Organoise),
-                  JSON.parse(PeakPilots),
+                  JSON.parse(PeakPilots)
 ];
 
 // novo endpoint com uma explicação inicial

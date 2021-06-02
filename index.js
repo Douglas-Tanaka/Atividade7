@@ -5,7 +5,7 @@ app.use(json()); //isso para garantir o tratamento do json
 
 // Permissões, senão colocar pode ser que não 
 // funcione com o cliente
-import cors from 'cors';
+var cors = require('cors');
 app.use(cors());
 
 // Porta que eu estou ouvindo, o primeiro é pro heroku e o segundo é pra usar no pc
